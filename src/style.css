@@ -9,3 +9,11 @@ body {
 .btn-secondary {
   color: black;
 }
+
+td:has(> a) {
+  width: 100%;
+}
+td a {
+  padding: 1rem !important;
+  font-size: larger !important;
+}
