@@ -3,7 +3,8 @@ body {
 }
 
 .card {
-  background-color: rgb(49, 58, 71);
+  background-color: rgb(83, 91, 99);
+  color: white;
 }
 
 .btn-secondary {
