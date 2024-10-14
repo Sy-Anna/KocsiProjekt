@@ -2,11 +2,6 @@ body {
   background-color:rgb(49, 58, 71) ;
 }
 
-.card {
-  background-color: rgb(83, 91, 99);
-  color: white;
-}
-
 .btn-secondary {
   color: black;
 }
@@ -17,4 +12,26 @@ td:has(> a) {
 td a {
   padding: 1rem !important;
   font-size: larger !important;
+}
+
+ul{
+  justify-content: center;
+}
+
+p{
+ font-weight: bold;
+}
+
+.list-group-item {
+  background-color: rgb(49, 58, 71);
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+.navbar {
+  font-weight: bold;
 }
