@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      min-height: 50vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2em;
+    }
+
+    .product {
+      position: relative;
+      box-shadow: 0 0 2em rgba(0, 0, 0, 0.2);
+      border-radius: 1em;
+      overflow: hidden;
+    }
+
+    .img-1 {
+      width: 30em;
+      z-index: 0;
+    }
+
+    .img-2{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 30em;
+      z-index: 2;
+    } 
+
+    .color {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      mix-blend-mode: multiply;
+    }
+    
+    .color-input{
+      background: #fff;
+      border: 1px #ccc solid;
+      border-radius: 4px;
+      padding: 0.3em;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="product">
+    <img src="/src/Images/HondaSideView.png" class="img-1">
+    <img src="/src/Images/HondaSideView5.png" class="img-2">
+
+    <div class="color" id="color"></div>
+  </div>
+
+  <div>
+    <h1>Honda Jazz</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum reiciendis autem facere saepe a minima blanditiis voluptatum veritatis, deserunt nihil minus eligendi ducimus odio aliquam repellendus voluptates nemo commodi pariatur.</p>
+    <b>szinezd az autódat ahogy te szeretnéd: </b>
+    <input 
+      type="color"
+      class="input-color"
+      id="color-input"
+      value="#FF0000">
+  </div>
+  <script src="src/color.ts"></script>
+</body>
+</html>
+
+
+
+<!--color.html előző code-->
+<!--
+ <div class="container">
+      <div class="row">
+        <div class="col">
+          <img style="width: 1000px; margin-top: 120px;" src="/src/Images/HondaSideView.png" alt="Honda Jazz" id="HondaJazz">
+          <img style="width: 1000px; margin-top: 120px;" src="src/Images/HondaSideView5.png" alt="Honda Jazz 2">
+          <div class="color" id="color"></div>
+        </div>
+        <div class="col">
+          <p style="color: white;">Váloztasd Úgy a kocsid színét ahogy te szeretnéd!</p>
+          <input type="color" class="color-input" value="#FF0000" id="ColorInput">
+        </div>
+      </div>
+    </div>
+-->
+
+
+
+
+<!--tires.html előző code-->
+<!-- <table>
+      <tr>
+        <td rowspan="3">
+          <img style="width: 800px; margin-top: 120px;" src="/src/Images/HondaSideView.png" alt="Honda Jazz">
+        </td>
+        <td>
+          <div class="card border-success w-25 mx-auto" style="width: 18rem;">
+            <img src="/src/Images/Tires1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">4 évszakos gumi</h5>
+              <p>79.900Ft</p>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="card border-primary w-25 mx-auto " style="width: 18rem;">
+            <img src="/src/Images/Tires2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">téli gumi</h5>
+              <p>69.900Ft</p>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="card border-danger w-25 mx-auto" style="width: 18rem;">
+            <img src="/src/Images/Tires3.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">off-road gumi</h5>
+              <p>109.900Ft</p>
+            </div>
+          </div>
+        </td>
+      </tr>
+  </table> 
+  
+  -->
+

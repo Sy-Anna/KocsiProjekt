@@ -35,3 +35,51 @@ p{
 .navbar {
   font-weight: bold;
 }
+
+.dropdown{
+  width: 100%;
+  position: relative;
+}
+
+.dropdown:hover .dropdown-list{
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown-select{
+  padding: 1rem;
+  border-radius: 4px;
+  background-color: white;
+  width: 100%;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.dropdown-list{
+  border-radius: 4px;
+  background-color: white;
+  position: absolute;
+  top: 110%;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s linear, visibility 0.2s linear;
+}
+
+.dropdownn-list__item{
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+
