@@ -1,6 +1,14 @@
 import './style.css'
 
 document.addEventListener('DOMContentLoaded', () => {
+
+    //tires.html ts code
+    const seasonChoiceImg = document.getElementById("seasonChoiceImg")! as HTMLElement;
+    const offRoadChoiceImg = document.getElementById("offRoadChoiceImg")! as HTMLElement;
+    const citySmartChoiceImg = document.getElementById("citySmartChoiceImg")! as HTMLElement;
+
+    var selectedTires: string = "default";
+
     // color.html ts code
     const color = document.getElementById('color');
     const ColorInput = document.getElementById('color-input') as HTMLInputElement;

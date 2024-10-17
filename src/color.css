@@ -4,6 +4,7 @@
 
   .img-1{
     width: 1000px;
+    
   } 
   
   .img-2{
@@ -12,6 +13,7 @@
     left: 0;
     z-index: 2;
     width: 1000px;
+    
   } 
 
   .color {
