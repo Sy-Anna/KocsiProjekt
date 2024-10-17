@@ -1,6 +1,5 @@
 import './style.css'
 
-
 document.addEventListener('DOMContentLoaded', () => {
     // color.html ts code
     const color = document.getElementById('color');
