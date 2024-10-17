@@ -1,42 +1,82 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Honda szervíz</title>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Honda szervíz</title>
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark " data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Honda Jazz</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/index.html">Főoldal</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/cart.html">Kosár</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-    </nav>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <img style="width: 1000px; margin-top: 120px;" src="/src/Images/HondaSideView.png" alt="Honda Jazz">
-        </div>
-        <div class="col" style="color: white ;">
-          <h3>Na hallod figyelj már ide te anna nos ide az gondoltam hogy ide radio gombok lennének vagy checkbox és akkor úgy ki lehet választani a dolgokat ha esetleg többet szeretne az illető vagy mit tudom én azt csinálsz amit akarsz</h3>
+      <div class="container-fluid">
+        <img src="/src/Images/transport.png" id="kocsi">
+        <a class="navbar-brand" href="#">Honda Jazz</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/index.html">Főoldal</a>
+            </li>
+            <li class="nav-item">
+              <li class="bx bx-cart bx-fade-right" id="kosar"></li>
+              <a class="nav-link" href="/cart.html">Kosár</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
+    </nav>
+    <table>
+      <tr>
+        <td rowspan="5">
+          <img style="width: 1000px; margin-top: 120px;" src="/src/Images/HondaSideView.png" alt="Honda Jazz">
+        </td>
+        <td>
+            <ul class="list-group list-group-horizontal-xl list-group-item-info">
+              <li class="list-group-item">Elektromos ablakok</li>
+              <li class="list-group-item">50 890 Ft</li>
+            </ul>
+          </td>
+      </tr>
+      <tr>
+        <td>
+            <ul class="list-group list-group-horizontal-xl list-group-item-info">
+              <li class="list-group-item">Fűtőszálas szélvédő</li>
+              <li class="list-group-item">89 990 Ft</li>
+            </ul>
+          </td>
+      </tr>
+      <tr>
+        <td>
+            <ul class="list-group list-group-horizontal-xl list-group-item-info">
+              <li class="list-group-item">Pohártartó</li>
+              <li class="list-group-item">9 990 Ft</li>
+            </ul>
+          </td>
+      </tr>
+      <tr>
+        <td>
+            <ul class="list-group list-group-horizontal-xl list-group-item-info">
+              <li class="list-group-item">Álló fűtés, álló klíma</li>
+              <li class="list-group-item">99 900 Ft</li>
+            </ul>
+          </td>
+      </tr>
+      <tr>
+        <td>
+          <ul class="list-group list-group-horizontal-xl list-group-item-info">
+            <li class="list-group-item">Végösszeg: </li>
+            <li id="charge" class="list-group-item"> Ft</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
     <script type="module" src="/src/main.ts"></script>
-</body>
+  </body>
 </html>
